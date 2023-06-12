@@ -19,14 +19,29 @@ textIndex // the current Character/Line/Word
 selectorValue // the value of the Amount Property
 ```
 
-Think of it this way: The Expression Selector is wrapped by a for loop. For every Character/Line/Word, it executes the code snipped once, updating `textIndex` every time. 
-For each textIndex-loop, you can return a number between `-100` and `100`— with `0` being "no effect", `100` being "full effect", and `-100` being "opposite full effect". 
+The property loops through all the Character/Line/Words. For each textIndex-loop, you can return a number between `-100` and `100` — with `0` being "no effect".
 To illustrate how you can use this, here's a crude but useful expression and it's outcome:
 
 <sub>Text Layer > Expression Selector > Amount</sub>
 ```javascript
-// imagine a for loop around this block of text
-// for(let textIndex=1;i<textTotal;textIndex++) {
+  if(textIndex==1) {
+    100
+  } else if(textIndex==2) {
+    50
+  } else if(textIndex==3) {
+    0
+  } else if(textIndex==4) {
+    -50
+  } else if(textIndex==5) {
+    -100
+  }
+
+```
+![character selector_Character Selector How_2023-06-12_17 47 42](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/38a2692b-3cc7-4adf-af0f-add5247c9414)
+
+Think of it this way: The Expression Selector is essentially wrapped by a for loop. For every Character/Line/Word, it executes the code snipped once, updating `textIndex` every time. In Javascript Talk, this is going on:
+```Javascript
+for(let textIndex=1;i<textTotal;textIndex++) { //imaginary for-loop
 
   if(textIndex==1) {
     100
@@ -39,10 +54,9 @@ To illustrate how you can use this, here's a crude but useful expression and it'
   } else if(textIndex==5) {
     -100
   }
- 
-// }
+  
+}
 ```
-![character selector_Character Selector How_2023-06-12_17 47 42](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/38a2692b-3cc7-4adf-af0f-add5247c9414)
 
 Actually, the output is three-dimensional, so `100` is just a shortcut for `100,100,100`.
 The output does affect the underlying dimensions of the effects, so `[100,0,0]` would only affect the first dimension, `[100,100,0]` the first two and so on.
