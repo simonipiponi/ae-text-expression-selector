@@ -1,5 +1,4 @@
-# After Effects Expression Selector
-
+# After Effects Text Expression Selector
 
 ## How it works
 
@@ -111,4 +110,9 @@ Effects by default have either one or two dimensions. `Position` has two (`[x,y]
 
 _Amount_ and the Effects both work with these dimensions. An amount of `[100,0,0]`, for example, will only affect every first dimension of the added Effects, leaving the `z` and `y`-Axis untouched.
 
+![Character Selector Bsp9_1_1](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/7623aaff-a7b1-41bc-977d-5b463d21576f)
 
+This is a difficult thing to wrap your head around, especially when dealing with Properties like Colors. It can be quite useful for more complex rigs, though.
+
+## Examples
+Visit the [Examples](/Examples) page for some ready-to-use code that I find useful.
