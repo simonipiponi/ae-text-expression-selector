@@ -7,8 +7,8 @@
 
 | Name  | Description | Output |
 | ------------- | ------------- | ------------- |
-| Expression  | Determines the Range and Amount of the Effect | [x,y,z] |
-| Based On  |Determines the Unit of the Range | Characters / Characters Excluding Spaces / Words / Lines |
+| Expression  | Determines the Range and Amount of the Effect | [x,y,z]
+| Based On  |Determines the Unit of the Range | Characters / Characters Excluding Spaces / Words / Lines
 | Effect |The Effect on selected parts of the text | / |
 | Amount | If not overwritten by the Expression, controls the Amount of Effect applied | [x,y,z] |
 
@@ -62,9 +62,9 @@ Think of it this way: This whole block of code is executed for each Character in
 
 
 
-In Javascript Talk, this is essentially what's going on:
+In Javascript talk, this is how you can think of what's going on under the hood:
 ```Javascript
-for(let textIndex=1;i<textTotal;textIndex++) {
+for(let textIndex=1;i<=textTotal;textIndex++) {
 
   // Expression Selector Code
   
@@ -78,7 +78,7 @@ To simplify the above code, we could do the following:
 (textIndex-1)*25;
 ```
 
-And to make this fully dynamic, I'll divide `100%` by `textTotal`. This will then work for any amount of Characters.
+And to make this fully dynamic, I'll divide `100%` by `textTotal` to get to the split percentages.
 
 ```javascript
 (textIndex-1)*(100/(textTotal-1));
@@ -87,5 +87,15 @@ And to make this fully dynamic, I'll divide `100%` by `textTotal`. This will the
 
 >#### Note:
 >Since both `textIndex` and `totalText` start at `1`, I'm subtracting `1` to get the first Character to be `0%`.
+
+Now, this code works with any amount of Characters.
+![character selector_Character Selector How 4_2023-06-13_14 47 19](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/5f493986-6cc6-49c1-84d6-064f2b732e2f)
+
+
+
+### Using the Amount Slider
+
+As previously mentioned, you can access the Amount Slider using 'selectorValue'.
+Include this variable in your code to have a keyframable modifier.
 
 
