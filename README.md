@@ -85,15 +85,15 @@ With that knowledge, we can simplify the crude If Else-code from above like this
 ```javascript
 (textIndex-1)*25;
 ```
-Using `textIndex-1` (numbers between `0` and `4`) and multiplying them by 25, we'll get to each of the previously hard coded percentages of `0%-100%`. I'm subtracting `1` to have the first Character be `0*25=0` and the last `4*25=100`.
+Using `textIndex-1` (numbers between `0` and `4`) and multiplying them by 25, we'll get to each of the previously hard coded percentages of `0%`, `25%`, `50%`, `75%` and `100%. I'm subtracting `1` to have the first Character be `0*25=0` and the last `4*25=100`.
 
-And to make this fully dynamic, I'll divide `100%` by `textTotal` to get to the split percentages (so `100%/5=25%` in this example).
+And to make this fully automatic, I'll divide `100%` by `textTotal` to get those percentages dynamically (so `100%/5=25%` in this example).
 
 ```javascript
 (textIndex-1)*(100/(textTotal-1));
 ```
 
-Now, this code works with any amount of Characters—with these 9 characters, the split percentages using `textTotal` are `100%/9`.
+Now, this code works with any amount of Characters—with these 9 characters, the split percentages using `textTotal` are `100%/9`—so it's `0*11%`, `1*11%` and so on.
 ![character selector_Character Selector How 4_2023-06-13_14 47 19](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/5f493986-6cc6-49c1-84d6-064f2b732e2f)
 
 
