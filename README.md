@@ -95,7 +95,20 @@ Now, this code works with any amount of Characters.
 
 ### Using the Amount Slider
 
-As previously mentioned, you can access the Amount Slider using 'selectorValue'.
-Include this variable in your code to have a keyframable modifier.
+If no expression overrides the value, the Expression will default to _Amount_.
+If you do override it, you can access it using `value`.
+
+This, for example, is how you would reverse the _Amount_-Slider:
+```javascript
+[100,100,100]-value;
+```
+You can also use this to your advantage by animating _Amount_ and then staggering the animation using `valueAtTime()`. You'll find this code in the [Examples](/Examples).
+
+### Dimensions
+_Amount_ is a three-dimensional property: `[x,y,z]`.
+
+Effects by default have either one or two dimensions. `Position` has two (`[x,y]`), `Opacity` has one (`[x]`), and if you enable _Enable Per-character 3D_ in the Animator, all sorts of properties gain a third dimension (`[x,y,z]`), too. 
+
+_Amount_ and the Effects both work with these dimensions. An amount of `[100,0,0]`, for example, will only affect every first dimension of the added Effects, leaving the `z` and `y`-Axis untouched.
 
 
