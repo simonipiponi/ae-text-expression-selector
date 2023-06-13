@@ -85,7 +85,7 @@ With that knowledge, we can simplify the crude If Else-code from above like this
 ```javascript
 (textIndex-1)*25;
 ```
-Using `textIndex-1` (numbers between `0` and `4`) and multiplying them by 25, we'll get to each of the previously hard coded percentages of `0%-100%`. I'm subtracting `1` to have the first Character be `0*25=0`.
+Using `textIndex-1` (numbers between `0` and `4`) and multiplying them by 25, we'll get to each of the previously hard coded percentages of `0%-100%`. I'm subtracting `1` to have the first Character be `0*25=0` and the last `4*25=100`.
 
 And to make this fully dynamic, I'll divide `100%` by `textTotal` to get to the split percentages.
 
