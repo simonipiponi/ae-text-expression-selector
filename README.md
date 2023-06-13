@@ -93,7 +93,7 @@ And to make this fully dynamic, I'll divide `100%` by `textTotal` to get to the 
 (textIndex-1)*(100/(textTotal-1));
 ```
 
-Now, this code works with any amount of Characters.
+Now, this code works with any amount of Characters—with these 9 characters, the split percentages using `textTotal` are `100%/9`.
 ![character selector_Character Selector How 4_2023-06-13_14 47 19](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/5f493986-6cc6-49c1-84d6-064f2b732e2f)
 
 
