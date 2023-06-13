@@ -16,7 +16,7 @@ Visit the [Examples](/Examples) page for some ready-to-use code and usage exampl
 
 ![character selector_Character Selector How 2_2023-06-13_15 32 23](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/39feb909-bb52-4501-9462-06ca40ec0a00)
 
-Instead of the Start and End-Sliders of the Range selector, an Expression is used to select a Range in the Source Text. Per _Based On_-Unit, a different amount of _Effect_ can be applied.
+Instead of the Start and End-Sliders of the Range selector, an Expression is used to select a Range in the Source Text.
 
 >#### Note:
 > For simplicity's sake, I will only be using the _Based On_-Unit **Characters** in this explanation. Of course, the same applies for all other units.
