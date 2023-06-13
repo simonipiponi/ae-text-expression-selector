@@ -147,6 +147,7 @@ textIndex%2 ? 100 : 0; //swap 100 & 0 to invert the effect
 const timeOffset=.1; // in seconds
 valueAtTime(time-((textIndex-1)*timeOffset))
 ```
-![Character Selector Bsp7](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/e5b3732e-39f1-4b0e-914d-650c69d5cb0a)
+![Character Selector Bsp7_1_1](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/b371fcf6-429b-4c28-9661-608e683f055c)
+
 
 
