@@ -80,7 +80,7 @@ for(let textIndex=1;i<=textTotal;textIndex++) {
 ```
 
 ### Simplify & Formularize
-To simplify the above code, we could do the following:
+With that knowledge, we can simplify the crude If Else-code from above like this:
 
 ```javascript
 (textIndex-1)*25;
