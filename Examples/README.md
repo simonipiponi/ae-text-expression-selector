@@ -52,6 +52,7 @@ textIndex%2 ? 100 : 0; //swap 100 & 0 to invert the effect
 ### Time Offset
 <sub>Text Layer > Expression Selector > Amount</sub>
 ```javascript
+// Animate Amount
 // make sure to change "based On" to get the desired effect
 const timeOffset=.1; // in seconds
 valueAtTime(time-((textIndex-1)*timeOffset))
