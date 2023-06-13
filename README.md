@@ -115,9 +115,9 @@ You can also use this to your advantage by animating _Amount_ and then staggerin
 ### Dimensions
 _Amount_ is a three-dimensional property: `[x,y,z]`.
 
-Effects by default have either one or two dimensions. `Position` has two (`[x,y]`), `Opacity` has one (`[x]`), and if you enable _Enable Per-character 3D_ in the Animator, all sorts of properties gain a third dimension (`[x,y,z]`), too. 
+Effects by default have either one or two dimensions. `Opacity` has one (`[x]`), `Position` has two (`[x,y]`),  and if you enable _Enable Per-character 3D_ in the Animator, all sorts of properties gain a third dimension (`[x,y,z]`), too. 
 
-_Amount_ and the Effects both work with these dimensions. An amount of `[100,0,0]`, for example, will only affect every first dimension of the added Effects, leaving the `z` and `y`-Axis untouched.
+Both _Amount_ and the Effects work with these dimensions. An amount of `[100,0,0]`, for example, will only affect every first dimension of the added Effects, leaving the `z` and `y`-Axis untouched.
 
 ![Character Selector Bsp9_1_1](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/7623aaff-a7b1-41bc-977d-5b463d21576f)
 
