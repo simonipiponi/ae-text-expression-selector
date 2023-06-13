@@ -79,22 +79,19 @@ for(let textIndex=1;i<=textTotal;textIndex++) {
 }
 ```
 
-### Simplify
+### Simplify & Formularize
 To simplify the above code, we could do the following:
 
 ```javascript
 (textIndex-1)*25;
 ```
+Using `textIndex-1` (numbers between `0` and `4`) and multiplying them by 25, we'll get to each of the previously hard coded percentages of `0%-100%`. I'm subtracting `1` to have the first Character be `0*25=0`.
 
 And to make this fully dynamic, I'll divide `100%` by `textTotal` to get to the split percentages.
 
 ```javascript
 (textIndex-1)*(100/(textTotal-1));
 ```
-
-
-#### Note
->Since both `textIndex` and `totalText` start at `1`, I'm subtracting `1` to get the first Character to be `0%`.
 
 Now, this code works with any amount of Characters.
 ![character selector_Character Selector How 4_2023-06-13_14 47 19](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/5f493986-6cc6-49c1-84d6-064f2b732e2f)
