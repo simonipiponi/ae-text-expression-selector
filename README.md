@@ -1,5 +1,8 @@
 # After Effects Text Expression Selector
 
+## Examples
+Visit the [Examples](/Examples) page for some ready-to-use code and usage examples.
+
 ## How it works
 
 ### Legend
@@ -114,5 +117,4 @@ _Amount_ and the Effects both work with these dimensions. An amount of `[100,0,0
 
 This is a difficult thing to wrap your head around, especially when dealing with Properties like Colors. It can be quite useful for more complex rigs, though.
 
-## Examples
-Visit the [Examples](/Examples) page for some ready-to-use code that I find useful.
+
