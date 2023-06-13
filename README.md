@@ -34,7 +34,11 @@ There are three variables unique to the Expression Selector:
 | `selectorValue` | the value of a Range Selector, if exists |
 
 ### Introduction
-Let's just jump straight into a crude but useful example to illustrate how this works.
+Counterintuitively, the _Amount_ Property and its Expression are not linked like they would usually be. Let's ignore this _Amount_-Value for just now—we'll focus on coding an Expression to select some Characters and change their appearance. 
+Let's just jump straight into a crude but useful demonstration to illustrate how this all works.
+
+### Setup
+In this example, we've got five Characters in a text Layer. In this expression we'll select each Character individually and return a number between `0` and `100`—these are the percentages of how much Effect is applied.
 
 <sub>Text Layer > Expression Selector > Amount</sub>
 
@@ -54,7 +58,8 @@ Let's just jump straight into a crude but useful example to illustrate how this 
 ```
 
 ![character selector_Character Selector How_2023-06-13_13 57 12](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/9c1b2955-a0cb-44ed-90aa-c214d8c6fdef)
-We used some If Statements to check for the textIndex. For each textIndex, we've returned a different number. This is the percentage of how much _Effect_ is applied to the specified range. For `textIndex==1`, it's 0% — hence the first character is completely unaffected. `textIndex==5` is 100% affected, so the full 90° Rotation and Green Color are applied. The states inbetween are interpolated.
+
+This is what that looks like: A gradual increase of effect. On the fifth Character (where `textIndex==5`), `100%` of the Effects are applied.
 
 #### Note
 > Return `-100` to have the exact opposite effect applied.
@@ -65,7 +70,7 @@ Think of it this way: This whole block of code is executed for each Character in
 
 
 
-In Javascript talk, this is how you can think of what's going on under the hood:
+In Javascript talk, this is basically what's going on under the hood.
 ```Javascript
 for(let textIndex=1;i<=textTotal;textIndex++) {
 
