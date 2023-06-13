@@ -51,9 +51,7 @@ Let's just jump straight into a crude but useful example to illustrate how this 
 ```
 
 ![character selector_Character Selector How_2023-06-13_13 57 12](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/9c1b2955-a0cb-44ed-90aa-c214d8c6fdef)
-
-As you can see, we used an If Statement to check for the textIndex. For each textIndex, we've returned a different number.
-This is the percentage of how much _Effect_ is applied to the specified range. For `textIndex==1`, it's 0% — hence the first character is completely unaffected. `textIndex==5` is 100% affected, so the full 90° Rotation and Green Color are applied. The states inbetween are automatically interpolated.
+We used some If Statements to check for the textIndex. For each textIndex, we've returned a different number. This is the percentage of how much _Effect_ is applied to the specified range. For `textIndex==1`, it's 0% — hence the first character is completely unaffected. `textIndex==5` is 100% affected, so the full 90° Rotation and Green Color are applied. The states inbetween are interpolated.
 
 >#### Note:
 > Return `-100` to have the exact opposite effect applied.
