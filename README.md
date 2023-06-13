@@ -103,7 +103,7 @@ Now, this code works with any amount of Characters—with these 9 characters, th
 If no expression overrides the value, the Expression will default to _Amount_.
 If you do override it, you can access it using `value`.
 
-This, for example, is how you would reverse the _Amount_-Slider:
+This, for example, is how you would invert the _Amount_-Slider:
 ```javascript
 [100,100,100]-value;
 ```
