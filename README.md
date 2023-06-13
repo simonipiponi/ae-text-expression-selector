@@ -5,6 +5,9 @@ Visit the [Examples](/Examples) page for some ready-to-use code and usage exampl
 
 ## How it works
 
+#### Disclaimer
+>This repo was created by trial and error. Since there is little information on the Text Expression Selector, some information might be incomplete or flat out wrong.
+
 ### Legend
 
 | Name  | Description | Output |
@@ -18,7 +21,7 @@ Visit the [Examples](/Examples) page for some ready-to-use code and usage exampl
 
 Instead of the Start and End-Sliders of the Range selector, an Expression is used to select a Range in the Source Text.
 
->#### Note:
+#### Note
 > For simplicity's sake, I will only be using the _Based On_-Unit **Characters** in this explanation. Of course, the same applies for all other units.
 
 ### Unique Variables
@@ -53,7 +56,7 @@ Let's just jump straight into a crude but useful example to illustrate how this 
 ![character selector_Character Selector How_2023-06-13_13 57 12](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/9c1b2955-a0cb-44ed-90aa-c214d8c6fdef)
 We used some If Statements to check for the textIndex. For each textIndex, we've returned a different number. This is the percentage of how much _Effect_ is applied to the specified range. For `textIndex==1`, it's 0% — hence the first character is completely unaffected. `textIndex==5` is 100% affected, so the full 90° Rotation and Green Color are applied. The states inbetween are interpolated.
 
->#### Note:
+#### Note
 > Return `-100` to have the exact opposite effect applied.
 
 Think of it this way: This whole block of code is executed for each Character in the Source Text. That's why we can ask for the value of `textIndex` five times and get different results for each Character.
@@ -85,7 +88,7 @@ And to make this fully dynamic, I'll divide `100%` by `textTotal` to get to the 
 ```
 
 
->#### Note:
+#### Note
 >Since both `textIndex` and `totalText` start at `1`, I'm subtracting `1` to get the first Character to be `0%`.
 
 Now, this code works with any amount of Characters.
