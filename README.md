@@ -12,9 +12,9 @@ Visit the [Examples](/Examples) page for some ready-to-use code and usage exampl
 
 | Name  | Description | Output |
 | ------------- | ------------- | ------------- |
-| Expression  | Determines the Range and Amount of the Effect | [x,y,z]
 | Based On  |Determines the Unit of the Range | Characters / Characters Excluding Spaces / Words / Lines
 | Effect |The Effect on selected parts of the text | / |
+| Expression  | Determines the Range and Amount of the Effect | [x,y,z]
 | Amount | If not overwritten by the Expression, controls the Amount of Effect applied | [x,y,z] |
 
 ![character selector_Character Selector How 2_2023-06-13_15 32 23](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/39feb909-bb52-4501-9462-06ca40ec0a00)
