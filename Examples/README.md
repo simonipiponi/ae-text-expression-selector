@@ -14,11 +14,12 @@
 <sub>Text Layer > Expression Selector > Amount</sub>
 ```javascript
 // make sure "based On" is set to "Characters"
-const characterToSelect = "*"; // change character here
+const characterToSelect = "&"; // change character here
 const str = text.sourceText.replace(/[\r\n]/gm, ''); // remove line breaks
 str[textIndex-1]==characterToSelect ? 100 : 0;// select character
 ```
-![character selector_BSP_2_2023-06-12_16 30 59](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/95332c96-aa95-497b-b0a1-dd5cc4d62ef3)
+![character selector_BSP_2_2023-06-14_12 48 21](https://github.com/simonheimbuchner/ae-text-expression-selector/assets/20266941/3a7f109b-db06-4be0-978e-b43c7180e879)
+
 
 ### Select Specific Word
 <sub>Text Layer > Expression Selector > Amount</sub>
