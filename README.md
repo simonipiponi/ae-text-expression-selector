@@ -1,4 +1,4 @@
-# After Effects Text Expression Selector
+# Demystifying the After Effects Text Expression Selector
 
 
 # Examples
