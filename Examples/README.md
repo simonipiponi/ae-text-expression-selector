@@ -50,6 +50,7 @@ textIndex%2 ? 100 : 0; //swap 100 & 0 to invert the effect
 ```
 ![character selector_Character Selector Bsp5_2023-06-12_16 44 36](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/2ee3e9de-c5ef-42dd-a0de-dcead4dd5e93)
 
+
 ### Time Offset
 <sub>Text Layer > Expression Selector > Amount</sub>
 ```javascript
@@ -59,5 +60,13 @@ const timeOffset=.1; // in seconds
 valueAtTime(time-((textIndex-1)*timeOffset))
 ```
 ![Character Selector Bsp7_1_1](https://github.com/simonheimbuchner/expressionSelector/assets/20266941/b371fcf6-429b-4c28-9661-608e683f055c)
+
+
+### Select One Character at a time
+<sub>Text Layer > Expression Selector > Amount</sub>
+```javascript
+// make sure "based On" is set to "Characters"
+textIndex === Math.floor(value[0]) ? 0 : 100; // use first axis of "Amount" to animate through the characters
+```
 
 
